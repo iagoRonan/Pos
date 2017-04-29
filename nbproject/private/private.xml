@@ -3,11 +3,20 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/iago/Documents/NetBeansProjects/ecommerce-pos/src/ecommerce/pos/models/Facade.java</file>
-            <file>file:/C:/Users/iago/Documents/NetBeansProjects/ecommerce-pos/src/ecommerce/pos/models/IFacade.java</file>
-            <file>file:/C:/Users/iago/Documents/NetBeansProjects/ecommerce-pos/src/ecommerce/pos/models/ClasseTestadora.java</file>
-            <file>file:/C:/Users/iago/Documents/NetBeansProjects/ecommerce-pos/src/ecommerce/pos/models/FormaPagamento.java</file>
-            <file>file:/C:/Users/iago/Documents/NetBeansProjects/ecommerce-pos/src/ecommerce/pos/dao/FormaPagamentoDAO.java</file>
+            <file>file:/C:/Users/RenanV/Documents/NetBeansProjects/pos/src/ecommerce/pos/models/ItemPedido.java</file>
+            <file>file:/C:/Users/RenanV/Documents/NetBeansProjects/pos/src/ecommerce/pos/models/Pedido.java</file>
+            <file>file:/C:/Users/RenanV/Documents/NetBeansProjects/pos/src/ecommerce/pos/models/ICalculo.java</file>
+            <file>file:/C:/Users/RenanV/Documents/NetBeansProjects/pos/src/ecommerce/pos/models/Contato.java</file>
+            <file>file:/C:/Users/RenanV/Documents/NetBeansProjects/pos/src/ecommerce/pos/models/Produto.java</file>
+            <file>file:/C:/Users/RenanV/Documents/NetBeansProjects/pos/src/ecommerce/pos/models/Boleto.java</file>
+            <file>file:/C:/Users/RenanV/Documents/NetBeansProjects/pos/src/ecommerce/pos/models/FormaPagamento.java</file>
+            <file>file:/C:/Users/RenanV/Documents/NetBeansProjects/pos/src/ecommerce/pos/models/PessoaFisica.java</file>
+            <file>file:/C:/Users/RenanV/Documents/NetBeansProjects/pos/src/ecommerce/pos/models/CartaoCredito.java</file>
+            <file>file:/C:/Users/RenanV/Documents/NetBeansProjects/pos/src/ecommerce/pos/models/Facade.java</file>
+            <file>file:/C:/Users/RenanV/Documents/NetBeansProjects/pos/src/ecommerce/pos/models/Pessoa.java</file>
+            <file>file:/C:/Users/RenanV/Documents/NetBeansProjects/pos/src/ecommerce/pos/models/ClasseTestadora.java</file>
+            <file>file:/C:/Users/RenanV/Documents/NetBeansProjects/pos/src/ecommerce/pos/models/Cliente.java</file>
+            <file>file:/C:/Users/RenanV/Documents/NetBeansProjects/pos/src/ecommerce/pos/models/PessoaJuridica.java</file>
         </group>
     </open-files>
 </project-private>

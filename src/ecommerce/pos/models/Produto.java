@@ -2,7 +2,7 @@ package ecommerce.pos.models;
 
 import ecommerce.pos.enumerador.GeneroProduto;
 
-public class Produto {
+public class Produto implements ICalculo {
     private Integer codigo;
     private String Descricao;
     private float valorProduto;
@@ -82,5 +82,12 @@ public class Produto {
         }
         public void adicionarProduto(int qtdadicionada){
                 this.qtdProduto = this.qtdProduto + qtdadicionada;
+        }
+        
+    @Override
+        public float calcularTotal(){ // uso da interface ICalculo para calcular o valortotal de um produto no estoque
+                float valorTotal = this.getqtdProduto()*this.getValorProduto();
+                return valorTotal;
+            
         }
 }

@@ -6,8 +6,8 @@ public class Boleto extends FormaPagamento{
 	private String Codigodebarras;
 	private String Banco;
 	
-	
-	public Boleto(int codPagamento, String dataVencimento, String Codigodebarras, String banco) {
+   
+    public Boleto(int codPagamento, String dataVencimento, String Codigodebarras, String banco) {
 		super(codPagamento);
 		this.dataVencimento = dataVencimento;
 		this.Codigodebarras = Codigodebarras;

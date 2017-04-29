@@ -2,12 +2,13 @@ package ecommerce.pos.models;
 
 public class FormaPagamento {
 
-	private Integer codigo;
+	private int codigo;
 	private String dataPagamento;
 	private boolean confirmacaoPagamento = false;
 	
-	public FormaPagamento(Integer codigo) {
+	public FormaPagamento(int codigo, String dataPagamento) {
 		this.codigo = codigo;
+                this.dataPagamento = dataPagamento;
 	}
 
     public Integer getCodigo() {

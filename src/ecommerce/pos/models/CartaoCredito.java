@@ -11,9 +11,9 @@ public class CartaoCredito extends FormaPagamento {
 	private String codigoSeguranca;
 	
 	
-	public CartaoCredito(int codPagamento,String bandeira, String operacao, int qtddVezes, String titular, String validade, String numero,
+	public CartaoCredito(int codPagamento,String dataPagamento, String bandeira, String operacao, int qtddVezes, String titular, String validade, String numero,
 			String codigoSeguranca){
-		super(codPagamento);
+		super(codPagamento, dataPagamento); //Herança de FormadePagamento
 		this.bandeira = bandeira;
 		this.operacao = operacao;
 		QtddVezes = qtddVezes;

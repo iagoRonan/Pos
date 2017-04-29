@@ -1,10 +1,10 @@
 package ecommerce.pos.models;
 
-public class Pedido {
+public class Pedido implements ICalculo {
 	// Encapsulamento de todos os atributos;
 	private int codPedido;
 	private Pessoa cliente;
-	private ItemPedido Itens[];	// vetor Utilizado para armazenar os produtos do pedido;
+	private ItemPedido Itens[];	// vetor utilizado para armazenar os produtos do pedido;
 	private FormaPagamento pagamento;
 	private float valorTotal;
 	
@@ -56,18 +56,20 @@ public class Pedido {
 		this.valorTotal = valorTotal;
 	}
 
-	public float CalculoValorTotal() {
+        @Override
+	public float calcularTotal() { //calculo do valor total
 		this.valorTotal = 0;
-		for (int x=0;x<Itens.length;x++){
-		this.valorTotal = this.valorTotal + this.Itens[x].getsubtotal();}
+            for (ItemPedido Iten : Itens) {
+                this.valorTotal = this.valorTotal + Iten.getsubtotal();
+            }
 		return valorTotal;
 	}
 
-	public float CalculoValorTotal2(float... subtotal) { // aqui usado medoto de argumentos variados.
+	public float calculoValorTotal(float... subtotal) { // aqui usado medoto de argumentos variados.
 		float total = 0;
         for(float d: subtotal)
         total+=d;	 // Somando os argumentos
-        return total; // Retornando a média
+        return total; // Retornando a mï¿½dia
   }
 
 	public static float desconto(float valor, float taxa){
@@ -87,8 +89,8 @@ public class Pedido {
 			System.out.println("subtotal: "+ this.Itens[x].getsubtotal());
 			}
 		if(this.Itens.length == 5){
-		System.out.println("Total:	"+ this.CalculoValorTotal2(this.Itens[0].getsubtotal(),this.Itens[1].getsubtotal(),this.Itens[2].getsubtotal(),this.Itens[3].getsubtotal(),this.Itens[4].getsubtotal(),this.Itens[5].getsubtotal()));
-		}else{System.out.println("Total:  "+ this.CalculoValorTotal());}
+		System.out.println("Total:	"+ this.calculoValorTotal(this.Itens[0].getsubtotal(),this.Itens[1].getsubtotal(),this.Itens[2].getsubtotal(),this.Itens[3].getsubtotal(),this.Itens[4].getsubtotal(),this.Itens[5].getsubtotal()));
+		}else{System.out.println("Total:  "+ this.calcularTotal());}
 		System.out.println("<---------------------------Dados Forma de Pagamento: ----------------------->");
 		System.out.println(pagamento.toString());
 		
